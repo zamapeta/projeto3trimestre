@@ -7,7 +7,7 @@ body {
 }
 
 .principal{
-	background: #CCCCCC;
+	background: #8f8080;
 	padding: 30px;
 }
 
@@ -28,7 +28,58 @@ p {
 }
 
 em strong {
-	color: #FF0000;
+	colbody {
+	
+    }
+    
+    #banner {
+        width:100%;
+    }
+    
+    .principal{
+        background: #868282;
+        padding: 30px;
+    }
+    
+    .titulo-principal {
+        padding-left: 20px;
+    }
+    
+    .titulo-centralizado {
+        text-align: center
+    }
+    
+    p {
+        text-align: center;
+    }
+    
+    #missao {
+        font-size: 20px
+    }
+    
+    em strong {
+        color: #7e0000;
+    }
+    
+    .itens {
+        font-style: italic
+    }
+    
+    .beneficios {
+        background: #f3c0c7;
+        padding: 20px;
+    }
+    
+    ul {
+        display: inline-block;
+        vertical-align: top;
+        width: 20%;
+        margin-right: 15%;
+    }
+    
+    .imagembeneficios {
+        width: 50%;
+    }or: #ad0000;
 }
 
 .itens {
