@@ -1,103 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+:root {
+    --cor-de-fundo: #1E1E1E;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A375E;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
+}
+
 body {
-	
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif;
 }
 
-#banner {
-	width: 90px;%;
-}
 
-.principal{
-	background: #adb7f7;
-	padding: 30px;
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .titulo-principal {
-	padding-left: 20px;
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
 }
 
-.titulo-centralizado {
-	text-align: center
+.titulo-principal span {
+    color: var(--verde);
 }
 
-p {
-	text-align: center;
+
+.botao {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
 }
 
-#missao {
-	font-size: 20px
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
 }
 
-em strong {
-	colbody {
-	
-    }
-    
-    #banner {
-        width:100%;
-    }
-    
-    .principal{
-        background: #c1acff;
-        padding: 50px;
-    }
-    
-    .titulo-principal {
-        padding-left: 50px;
-    }
-    
-    .titulo-centralizado {
-        text-align: center
-    }
-    
-    p {
-        text-align: center;
-    }
-    
-    #missao {
-        font-size: 20px
-    }
-    
-    em strong {
-        color: #8dd6f8;
-    }
-    
-    .itens {
-        font-style: italic
-    }
-    
-    .beneficios {
-        background: #c0d8f3;
-        padding: 20px;
-    }
-    
-    ul {
-        display: inline-block;
-        vertical-align: top;
-        width: 20%;
-        margin-right: 15%;
-    }
-    
-    .imagembeneficios {
-        width: 40%;
-    }or: #97eaff;
+.botoes {
+    display: block;
 }
 
-.itens {
-	font-style: italic
+.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
 }
 
-.beneficios {
-	background: #a9e9f1;
-	padding: 20px;
-}
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
+    }
 
-ul {
-	display: inline-block;
-	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
-}
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
 
-.imagembeneficios {
-	width: 40%;
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
 }
